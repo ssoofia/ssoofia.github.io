@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Space</title>
+
+        <link rel="stylesheet" type ="text/css" href="./colors.css" />
+        <link rel="stylesheet" type ="text/css" href="./styles.css" />
+    </head>
+    <body>
+        
+        <span class="toggle"></span>
+        <span class="wave"></span>
+        
+        <body>
+           
+           
+           <script>
+                 alert('Привет!')
+    alert('Этот небольшой курс расскажет тебе про различные интересные факты о космосе, постепенно погружая тебя в мир астрономии.')
+   alert('Но для начала тебе необходимо сыграть в игру. В случае победы, тебе будет открыт доступ к сайту.')
+    nick=prompt('Введите свое имя, пожалуйста')
+   
+   
+ 
+           
+                while (!Boolean(nick)){     // альтернативы: (Boolean(nick) == 0); (nick == "" || nick == null)
+                    nick = prompt("Это имя не подходит. Как тебя зовут?");
+                }
+                
+                alert(nick + ", давай сыграем в игру. Я загадаю число, а ты попробуй угадать. Я буду давать тебе подсказки.")
+                let max = (prompt("Насколько большим может стать наше число? Введи число больше 0"));
+                while (isNaN(max) || max <= 0) { //  альтернативы: (!Boolean(Number(max)) || max <= 0); (!isFinite(max) || max <= 0)
+                    max = (prompt("Это не подходит. Введи число больше 0"));
+                }
+                let num = Math.trunc(Math.random()*max);
+                let guess = (prompt("Попробуй угадать число от 0 до " + max));
+                let count = 1;
+                while (guess != num){
+                    count++
+                    if (isNaN(guess) || guess > max || guess < 0) {
+                        guess = (prompt("Не подходит! Введи число от 0 до " + max));
+                    }
+                    else if (guess < num){
+                        guess = (prompt("Слишком маленькое. Нужно больше!"));
+                    }
+                    else {
+                        guess = (prompt("Слишком большое. Нужно меньше!"));
+                    }
+                }
+                if (count > 9 && count < 21){
+                    alert("Угадал! Это число " + num + ". Тебе понадобилось " + count + " попыток.");
+                }
+                else {
+                    switch (count % 10){
+                        case 1:
+                            alert("Угадал! Это число " + num + ". Тебе понадобилась 1 попытка.");
+                            break;
+                        case 2:
+                        case 3:
+                        case 4:
+                            alert("Угадал! Это число " + num + ". Тебе понадобилось " + count + " попытки.");
+                            break;
+                        default:
+                            alert("Угадал! Это число " + num + ". Тебе понадобилось " + count + " попыток.");
+                    }
+               
+                    
+
+                }</script>
+              
+        </body>
+
+        <script src="./toddle.js"></script>
+    </body>
+
+
+<script>           
+    alert('Молодец! Ты справился с заданием! Теперь, желаю хорошо провести время, изучая и внедряясь в тайны вселенной.')
+alert('Удачи, '+nick+'!')</script> 
+
+
+   <center><h1><small><u>Основы изучения астрономии.</u></small></h1></center>
+       
+   
+    <button onclick="prev()"> prev </button>
+          <img id="slider" src="https://pics.utro.ru/utro_photos/2019/10/07/1419453.jpg" width="400px" height="200px"/>
+            <button onclick="next()"> next </button>
+      
+        <script src="./картинки.js"></script>
+        <hr>
+        <br>
+    <p><i><u><big>Главы:</big></u></i></p>
+    <ul>
+        <li>1. Знакомство с нашей планетой.</li>
+        <li>2. Солнечная система и её устройство.</li>
+        <li>3. Основные понятия о масштабах вселенной.</li>
+    </ul>
+    <hr>
+    <h1><small>Глава 1. Знакомство с нашей планетой.</small></h1>
+    <p>Наша планета, Земля, обладает крайне удивительными свойствами, с помощью которых человечество не могло бы существовать. 
+    Ведь багодаря именно такому расположению Земли от Солнца мы не превращаемся в ледяные статуи и, одновременно с этим, не ходим 
+по расскаленным литосферным плитам. Земля - единственное, по нынешним данным, пригодное для жизни место в солнечной системе.
+</p>
+<p>Для того, чтобы понять насколько огромна наша планета, представьте себе расстояние от Санкт-Петербурга до Турции. Думаю, многие 
+    летали в эту жаркую страну и знают, что полет, в среднем длится около 4 часов. А это лишь Турция! Длина экватора составляет примерно
+    40.000 км. Самолет летит со скоростью +/- 800 км/ч. Если бы Земля была неподвижна, то на ее облет ушло бы 50 часов. 
+    Но поскольку Земля вращается с запада на Восток, затраченное время будет меняться в зависимости от того, полетите ли вы на Запад или 
+    на Восток, чтобы вернуться в тот же аэропорт. 
+</p>
+<p><img src="https://bigslide.ru/images/46/45691/960/img1.jpg" width="600", height="400"</p>
+<p>Земля имеет не совсем идеальную круглую форму шара. Её радиус по экватору на 22 метра больше, чем полярный радиус.
+    Следовательно, она немного сплюснута у полюсов.</p>
+<p>Теперь, когда мы уже разобрались с размерами Земли, посмотрим, сколько времени мы потратим, чтобы добраться до Луны и Солнца на 
+    самолете. Конечно же, это невозможно, но давайте попробуем провести подсчеты. Как мы уже выяснили раннее, скорость самолета 
+    составляет 800-850 км/ч. Расстояние от Земли до Луны 384 тыс.км. Следовательно, мы преодолеем этот путь за 20-21 день.
+    А расстояние от Земли до Солнца 150 млн.км. Представляете? Это гиганские цифры! Так что время существенно увеличивается. Нам потребуется 
+    20 лет!</p>
+   <!-- <img src="https://naukatv.ru/upload/images/original/8b/8b0e7df93104fd7907d1ebe0529f4272c239a402.jpg"</div>-->
+
+  
+   <hr>
+<p><center><big>После каждой главы будет ряд вопросов, основанных на информации и интересных фактах, коротые мы узнали.</big></center></p>
+         <p>  <center><i><u>Вопрос №1</u></i></center></p> 
+            <p>На каком расстоянии от солнца находится земля?</p>
+            <form name="question1">
+            <br/><input type="radio" name="answer" value="a1">800 млн.км
+            <br/><input type="radio"  name="answer" value="a2">384 млн.км
+            <br/><input type="radio" name="answer" value="a3">150 млн.км
+            <br/><input type="submit" name="ok" value="ok">
+            </form>
+            <script>
+                var enabledBox = document.question1.ok;
+                 let a
+                function onclick(e){
+                    let r = document.question1.answer
+                    a = r.value == 'a3'
+                    if (r.value == 'a3') {
+                        document.question1.style = 'color: green'
+                    }
+                    else {
+                        document.question1.style = 'color: red'
+                    }
+                    e.preventDefault();
+                }
+                enabledBox.addEventListener("click", onclick);
+                </script>
+
+          <hr>
+
+          
+            <p>  <center><i><u>Вопрос №2</u></i></center></p> 
+            <p>На каком расстоянии от солнца находится луна?</p>
+            <form name = 'question2'>
+            <br/><input type="radio" name="answer" value="a1">384 тыс.км
+            <br/><input type="radio"  name="answer" value="a2">150 тыс.км
+            <br/><input type="radio" name="answer" value="a3">800 тыс.км
+            <br/><input type="submit" name="ok" value="ok">
+            </form>
+<script>
+    var enabledBox = document.question2.ok;
+     let b
+    function onclick(e){
+        let r = document.question2.answer
+        b = r.value == 'a1'
+        if (r.value == 'a1') {
+            document.question2.style = 'color: green'
+        }
+        else {
+            document.question2.style = 'color: red'
+        }
+        e.preventDefault();
+    }
+    enabledBox.addEventListener("click", onclick);
+    </script>
+            <hr>
+            <p>  <center><i><u>Вопрос №3</u></i></center></p> 
+            <p>Назовите длину экватора</p>
+            <form name="question3">
+            <br/><input type="radio" name="answer" value="a1">4 000 км
+            <br/><input type="radio"  name="answer" value="a2">40 000 км
+            <br/><input type="radio" name="answer" value="a3">400 000 км
+            <br/><input type="submit" name="ok" value="ok">
+            </form>
+            <script>
+                var enabledBox = document.question3.ok;
+                 let с
+                function onclick(e){
+                    let r = document.question3.answer
+                    с = r.value == 'a2'
+                    if (r.value == 'a2') {
+                        document.question3.style = 'color: green'
+                    }
+                    else {
+                        document.question3.style = 'color: red'
+                    }
+                    e.preventDefault();
+                }
+                enabledBox.addEventListener("click", onclick);
+                </script>
+                  </script>
+                  <hr>
+                  <p>  <center><i><u>Вопрос №4</u></i></center></p> 
+                  <p>Земля имеет идеальную шарообразную форму?</p>
+                  <form name="question4">
+                  <br/><input type="radio" name="answer" value="a1">Да
+                  <br/><input type="radio"  name="answer" value="a2">Нет, она немного сплюснута у полюсов
+                  <br/><input type="submit" name="ok" value="ok">
+                  </form>
+                  <script>
+                      var enabledBox = document.question4.ok;
+                       let f
+                      function onclick(e){
+                          let r = document.question4.answer
+                          f = r.value == 'a2'
+                          if (r.value == 'a2') {
+                              document.question4.style = 'color: green'
+                          }
+                          else {
+                              document.question4.style = 'color: red'
+                          }
+                          e.preventDefault();
+                      }
+                      enabledBox.addEventListener("click", onclick);
+                      </script>
+                <hr>
+        <p><h1><small>Глава 2. Солнечная система и её устройство.</small></h1></p>
+        <p>Солнечная система - планетная система, вкючающая в себя центральную звезду - Солнце, и все естественные
+            космические объекты, вращающиеся вокруг него. Практически каждая планета имеет свой или свои спутники - небесные тела, которые
+            вращаются по определенной траектории(орбите) вокруг другого объекта в космическом пространстве под действиепм гравитации. У Меркурия и 
+            Венеры нет спутников, а , например, у Юпитера(который, к слову, является самой большой планетой в Солнечной системе) их 80! Крупнейший из которых - Ганимед, являющийся самым большим спутником
+            в Солнечной системе. У Земли всего лишь один естественный спутник - Луна. Она, двигаясь вокруг Земли, воздействует на земную поверхность(притяжение). 
+            Вода в океане подвижна, поэтому в месте под Луной происходит её скопление. В это время наблюдается прилив. Когда на Земле наблюдается отлив,
+             Луна уходит от этого места на максимальное расстояние.
+        </p>
+        <p>Теперь поговорим про другие интересные космические объекты. Существует два типа планет - земная группа и планеты-гиганты. Планеты земной группы имеют 
+            твердую поверхность, а гиганты ее не имеют, они состоят из жидкого газа. На планетах
+             земной группы значительно теплее, так как они находятся гораздо ближе к Солнцу. 
+            В нашей системе восемь планет. Расставим их в порядке убывания от Солнца. Сначала назовем первые четыре планеты. Они 
+        являются планетами земной группы.</p>
+        <ul>
+            <li>1. Меркурий</li>
+            <li>2. Венера </li>
+            <li>3. Земля</li>
+            <li>4. Марс </li>
+        </ul>
+        <img src="https://astromaniya.at.ua/Images/planety_zem_gr.jpg" width="640", height="160">
+        <p>Теперь назовем планеты-гиганты.</p>
+        <ul>
+            <p><li>5. Юпитер</li>
+            <li>6. Сатурн</li>
+            <li>7. Уран</li>
+            <li>8. Нептун</li></p>
+        </ul>
+        <img src="http://xn----8sbiecm6bhdx8i.xn--p1ai/sites/default/files/planetarnay_sistema_2.jpg"
+        <p><hr></p>
+      
+        <p><center><i><u>Вопрос №1</u></i></center></p>
+        <p>Назовите крупнейший спутник в Cолнечной системе</p>
+       <p><br/><input type="text" name="Ganimed" style="width:400px;" value=""></p> 
+       <button onclick="ganimed">ok</button>
+       <script>
+       var d = ["ганимед", "Ганимед"];
+       
+       var enabledBox = document.question4.ok;
+       function ganimed(){
+       }
+       let keyBox = document.querySelector("[name=Ganimed]")
+       function onblur(e){
+     
+     // получаем его значение и обрезаем все пробелы
+     var text = keyBox.value.trim();
+     if(text==="ганимед"|| text==="Ганимед"){
+         keyBox.style.borderColor = "green";
+         keyBox.style.borderStyle = "solid";
+         keyBox.style.backgroundColor = "lime";}
+     else{
+         keyBox.style.borderColor = "red";
+         keyBox.style.backgroundColor = "tomato";}
+ }
+
+        keyBox.addEventListener("blur", onblur);
+    </script>
+    <hr>
+
+        <p><center><i><u>Вопрос №2</u></i></center></p>
+        <p>Сколько планет в Солнечной системе?</p>
+        <form name="question6">
+            <br/><input type="radio" name="answer" value="a1">80
+            <br/><input type="radio"  name="answer" value="a2">8
+            <br/><input type="radio"  name="answer" value="a3">4
+            <br/><input type="submit" name="ok" value="ok">
+            </form>
+            <script>
+                var enabledBox = document.question6.ok;
+                 let q
+                function onclick(e){
+                    let r = document.question6.answer
+                    q = r.value == 'a2'
+                    if (r.value == 'a2') {
+                        document.question6.style = 'color: green'
+                    }
+                    else {
+                        document.question6.style = 'color: red'
+                    }
+                    e.preventDefault();
+                }
+                enabledBox.addEventListener("click", onclick);
+                </script>
+        
+
+        <hr>
+
+        <p><center><i><u>Вопрос №3</u></i></center></p>
+        <p>Что такое луна?</p>
+        <form name="question5">
+            <br/><input type="radio" name="answer" value="a1">Естественный спутник Земли
+            <br/><input type="radio"  name="answer" value="a2">Один из спутников Юпитера
+            <br/><input type="radio"  name="answer" value="a3">Планета, располагающаяся в Солнечной системе
+            <br/><input type="submit" name="ok" value="ok">
+            </form>
+            <script>
+                var enabledBox = document.question5.ok;
+                 let u
+                function onclick(e){
+                    let r = document.question5.answer
+                    u = r.value == 'a1'
+                    if (r.value == 'a1') {
+                        document.question5.style = 'color: green'
+                    }
+                    else {
+                        document.question5.style = 'color: red'
+                    }
+                    e.preventDefault();
+                }
+                enabledBox.addEventListener("click", onclick);
+                </script>
+
+<hr>
+
+<p><center><i><u>Вопрос №4</u></i></center></p>
+<p>Выберите пункт, в котором ВСЕ планеты относятся к земной группе</p>
+<form name="question7">
+    <br/><input type="radio" name="answer" value="a1">Юпитер, Сатурн, Марс, Земля
+    <br/><input type="radio"  name="answer" value="a2">Меркурий, Уран, Земля, Марс
+    <br/><input type="radio"  name="answer" value="a3">Земля, Венера, Марс, Меркурий
+    <br/><input type="submit" name="ok" value="ok">
+    </form>
+    <script>
+        var enabledBox = document.question7.ok;
+         let x
+        function onclick(e){
+            let r = document.question7.answer
+            x = r.value == 'a3'
+            if (r.value == 'a3') {
+                document.question7.style = 'color: green'
+            }
+            else {
+                document.question7.style = 'color: red'
+            }
+            e.preventDefault();
+        }
+        enabledBox.addEventListener("click", onclick);
+        </script>
+
+
+<hr>
+
+<p><center><i><u>Вопрос №5</u></i></center></p>
+<p>Назовите самую большую планету в Солнечной системе</p>
+<form name="question8">
+    <br/><input type="radio" name="answer" value="a1">Юпитер
+    <br/><input type="radio"  name="answer" value="a2">Меркурий
+    <br/><input type="radio"  name="answer" value="a3">Земля
+    <br/><input type="submit" name="ok" value="ok">
+    </form>
+    <script>
+        var enabledBox = document.question8.ok;
+         let y
+        function onclick(e){
+            let r = document.question8.answer
+            y = r.value == 'a1'
+            if (r.value == 'a1') {
+                document.question8.style = 'color: green'
+            }
+            else {
+                document.question8.style = 'color: red'
+            }
+            e.preventDefault();
+        }
+        enabledBox.addEventListener("click", onclick);
+        </script>
+
+
+<hr>
+
+<p><center><i><u>Вопрос №6</u></i></center></p>
+<p>Найдите Меркурий(самую маленькую и ближаюшую планету к Солнцу)</p>
+<form name="question9">
+    <br/><input type="radio" name="answer" value="a1"><img style="border-style: solid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mercury_in_color_-_Prockter07_centered.jpg/280px-Mercury_in_color_-_Prockter07_centered.jpg" height="100", width="100"
+    <br/><input type="radio"  name="answer" value="a2"><img style="border-style: solid"src="https://st.depositphotos.com/1034598/3528/i/600/depositphotos_35285169-stock-photo-planet-jupiter.jpg" height="100", width="100"
+    <br/><input type="radio"  name="answer" value="a3"><img style="border-style: solid"src="https://static5.depositphotos.com/1034598/437/i/600/depositphotos_4370154-stock-photo-mars-full-shot.jpg" height="100", width="100"
+    <br/><input type="submit" name="ok" value="ok">
+    </form>
+    <script>
+        var enabledBox = document.question9.ok;
+         let g
+        function onclick(e){
+            let r = document.question9.answer
+            g = r.value == 'a1'
+            if (r.value == 'a1') {
+                document.question9.style = 'color: green'
+                document.question9.style.borderColor="green"
+                document.question9.style.borderWidth="45px"
+
+            }
+            else {
+                document.question9.style = 'color: red'
+                document.question9.style.borderColor="red"
+            }
+            e.preventDefault();
+        }
+        enabledBox.addEventListener("click", onclick);
+        </script>
+       
+</html>
