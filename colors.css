@@ -1,0 +1,20 @@
+html {
+    --background: #ffffff;
+    --box-shadow: rgb(255, 255, 255);
+    --text: rgb(0, 0, 0);
+    --text-faded: rgb(0, 0, 0);
+    --badge-background: #000000;
+    --badge-color: #ffffff;
+}
+
+.theme-dark {
+    
+    --box-shadow: rgb(0, 0, 0);
+    --text: #ffffff;
+    --text-faded: rgb(255, 255, 255);
+    --badge-background: #ffffff;
+    --badge-color: #000000;
+    background-image:url(https://winzoro.net/uploads/posts/2017-10/1508410048_monosnap.jpg);
+    background-attachment: fixed;
+    
+}
