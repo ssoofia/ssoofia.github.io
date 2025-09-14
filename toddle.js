@@ -9,4 +9,6 @@
         }, 300);
         
         setTimeout(() => this.classList.remove('animate'), 300);
+
+        
     });
