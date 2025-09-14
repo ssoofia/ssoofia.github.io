@@ -1,0 +1,2 @@
+/Users/macbboksofia/Documents/university/cpp-practice/test/ssoofia.github.io/build/CMakeFiles/edit_cache.dir
+/Users/macbboksofia/Documents/university/cpp-practice/test/ssoofia.github.io/build/CMakeFiles/rebuild_cache.dir
